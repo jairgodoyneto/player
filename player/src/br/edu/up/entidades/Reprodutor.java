@@ -33,6 +33,4 @@ public class Reprodutor {
     public void setPlaylist(Playlist playlist) {
         this.playlist = playlist;
     }
-
-    
 }
