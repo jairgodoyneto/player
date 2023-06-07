@@ -1,4 +1,5 @@
 package br.edu.up.front;
+import br.edu.up.persistencia.UsuarioPersistencia;
 public class Principal {
 	public static void main(String[] args) {
 		int opc;
@@ -11,11 +12,13 @@ public class Principal {
 			opc = Console.readInt("Opção: ");
 			switch(opc){
 				case 1:
-					new AppUsuario();
+					
+					//new AppUsuario();
 					break;
-				case 2:
+				/*case 2:
 					new AppAutor();
 					break;
+				*/
 			}
 		}while(opc != 3);
 	}
