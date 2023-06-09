@@ -11,7 +11,7 @@ public class EntityManagerFactory {
 	{
 		if(manager == null)
 		{
-			 manager = Persistence.createEntityManagerFactory("exemplo").createEntityManager();
+			 manager = Persistence.createEntityManagerFactory("player").createEntityManager();
 		
 		}
 		return manager;

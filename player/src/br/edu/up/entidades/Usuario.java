@@ -12,31 +12,30 @@ public class Usuario {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @OneToOne
-    private Reprodutor reprodutor;
+   // @OneToOne
+   // private Reprodutor reprodutor;
 
     private String cpf;
     private String nome;
 
+    public Usuario(String cpf, String nome) {
+        this.cpf = cpf;
+        this.nome = nome;
+    }
+
     public int getId(){
         return id;
     }
-    public Reprodutor getReprodutor() {
+    /*public Reprodutor getReprodutor() {
         return reprodutor;
     }
     public void setReprodutor(Reprodutor reprodutor) {
         this.reprodutor = reprodutor;
-    }
+    }*/
     public String getCpf() {
         return cpf;
-    }
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
     }
     public String getNome() {
         return nome;
     }
-    public void setNome(String nome) {
-        this.nome = nome;
-    }    
 }
